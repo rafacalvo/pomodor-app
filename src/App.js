@@ -21,9 +21,10 @@ function App() {
         intervals (also called sessions).
       </p>
       <p className='text-lg font-semibold'>
-        INSTRUCTIONS: To start using this app hit the play button. <br /> You
-        can hit the <i class='fas fa-plus mx-1'></i> and{' '}
-        <i class='fas fa-minus mx-1'></i> buttons to change your times.
+        INSTRUCTIONS: To start using this app hit the{' '}
+        <i class='fas fa-play mx-1'></i> (play) button. <br /> You can hit the{' '}
+        <i class='fas fa-plus mx-1'></i> (plus) and{' '}
+        <i class='fas fa-minus mx-1'></i> (minus) buttons to change your times.
       </p>
       <Customizer>
         <Timer />
