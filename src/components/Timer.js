@@ -19,11 +19,7 @@ function Timer() {
   const workLength = useContext(workContext);
 
   const startedSound = new Audio(startedAudio);
-<<<<<<< HEAD
   const endSound = new Audio(endAudio);
-=======
-  var endedSound = new Audio(endedAudio);
->>>>>>> 116d3a028b5a527fb2c143c9f8b726e9a5c8aa2e
 
   const minuteMultiplier = 60;
   useEffect(() => {
@@ -76,6 +72,7 @@ function Timer() {
     if (timerDone) {
       endSound.play();
     }
+    // eslint-disable-next-line
   }, [sessionType, timerDone]);
 
   useEffect(() => {
