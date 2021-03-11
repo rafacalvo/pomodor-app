@@ -71,7 +71,7 @@ function Timer() {
     if (timerDone) {
       endedSound.play();
     }
-  }, [sessionType, timerDone]);
+  }, [sessionType, timerDone, endedSound]);
 
   useEffect(() => {
     if (sessionNumber > 4) {
