@@ -18,7 +18,7 @@ function Timer() {
   const workLength = useContext(workContext);
 
   const startedSound = new Audio(startedAudio);
-  const endedSound = new Audio(endedAudio);
+  var endedSound = new Audio(endedAudio);
 
   const minuteMultiplier = 60;
   useEffect(() => {
