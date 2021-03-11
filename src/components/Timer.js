@@ -69,9 +69,9 @@ function Timer() {
       setSessionNumber((prevNumber) => prevNumber + 1);
     }
     if (timerDone) {
-      endedSound.play();
+      endedAudio.play();
     }
-  }, [sessionType, timerDone, endedSound]);
+  }, [sessionType, timerDone]);
 
   useEffect(() => {
     if (sessionNumber > 4) {
