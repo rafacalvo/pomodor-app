@@ -1,8 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useState } from 'react';
 import Duration from 'luxon/src/duration.js';
 import { longBreakContext, breakContext, workContext } from './Customizer.js';
 
-import endedAudio from '../audio/alert_high-intensity.wav';
+import endAudio from '../audio/alert_high-intensity.wav';
 import startedAudio from '../audio/hero_decorative-celebration-01.wav';
 
 function Timer() {
@@ -18,7 +19,7 @@ function Timer() {
   const workLength = useContext(workContext);
 
   const startedSound = new Audio(startedAudio);
-  const endedSound = new Audio(endedAudio);
+  const endSound = new Audio(endAudio);
 
   const minuteMultiplier = 60;
   useEffect(() => {
@@ -69,7 +70,7 @@ function Timer() {
       setSessionNumber((prevNumber) => prevNumber + 1);
     }
     if (timerDone) {
-      endedSound.play();
+      endSound.play();
     }
   }, [sessionType, timerDone]);
 
