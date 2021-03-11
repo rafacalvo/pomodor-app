@@ -18,7 +18,7 @@ function Timer() {
   const workLength = useContext(workContext);
 
   const startedSound = new Audio(startedAudio);
-  //const endedSound = new Audio(endedAudio);
+  const endedSound = new Audio(endedAudio);
 
   const minuteMultiplier = 60;
   useEffect(() => {
@@ -69,7 +69,7 @@ function Timer() {
       setSessionNumber((prevNumber) => prevNumber + 1);
     }
     if (timerDone) {
-      endedAudio.play();
+      endedSound.play();
     }
   }, [sessionType, timerDone]);
 
